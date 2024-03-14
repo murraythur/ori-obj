@@ -1,11 +1,11 @@
 <?php
 
-function isPrime(int $num): bool {
-    if ($num <= 1) {
+function isPrime(int $numx): bool {
+    if ($numx <= 1) {
         return false;
     }
-    for ($i = 2; $i <= sqrt($num); $i++) {
-        if ($num % $i === 0) {
+    for ($i = 2; $i <= sqrt($numx); $i++) {
+        if ($numx % $i === 0) {
             return false;
         }
     }
@@ -14,15 +14,15 @@ function isPrime(int $num): bool {
 
 echo "inidacted prime numbers detected - press 0 to exit\n";
 
-$primos = [ ];
+$primes = [ ];
 do {
-    $numero = readline("num: ");
-    if($numero !== 0 && isPrime($numero)) {
-        $primos[] = $numero;
+    $numx = readline("num: ");
+    if($numx !== 0 && isPrime($numx)) {
+        $primes[] = $numx;
     }
-}   while($numero !== 0);
-        if (!empty($primos)) {
-        echo "primes: " . implode(" - ", $primos) . ".\n";
+}   while($numx !== 0);
+        if (!empty($primes)) {
+        echo "primes: " . implode(" - ", $primes) . ".\n";
 } else {
         echo "no primes were informed :/.\n";
 }

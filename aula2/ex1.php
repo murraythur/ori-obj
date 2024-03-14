@@ -1,17 +1,17 @@
 <?php
 
 do {
-    $input = readline("insert a int number: ");
-    $numero = filter_var($input, FILTER_VALIDATE_INT);
-    if($numero === false) {
+    $valor = readline("insert a int number: ");
+    $num = filter_var($valor);
+    if($num === false) {
         echo "insert a valid int number.\n";
     }
-} while($numero === false);
-$result = $numero >= 0 ? $numero * 2 : $numero * 3;
+} while($num === false);
+$resultado = $num >= 0 ? $num * 2 : $num * 3;
 
-if($numero >= 0) {
-    echo "the double $numero is = $result\n";
+if($num >= 0) {
+    echo "the double $num is = $resultado\n";
 } else {
-    echo "the triple of $numero is $result\n";
+    echo "the triple of $num is $resultado\n";
 }
 ?>

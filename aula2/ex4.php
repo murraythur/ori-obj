@@ -6,7 +6,7 @@
 
     for ($i=0; $i < 10; $i++) { 
         echo $i+1 . ". ";
-        $even[$i] = (int) readline("insera numr: ");
+        $even[$i] = readline("insera numr: ");
     if ($even[$i] % 2 == 0) {
             $even++;
         } else {

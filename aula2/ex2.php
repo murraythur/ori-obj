@@ -5,7 +5,7 @@
     do
     {
         $total += $valor;
-        $valor = (int) readline("Valor: R$");
+        $valor = readline("Valor: R$");
     } 
     while ($valor != 0);
       echo "total = $total. \n";
